@@ -2,7 +2,7 @@
 <h1 align="center"><b>Hi , I'm Raphael Marques </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 <!--  -->
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://i.pinimg.com/originals/28/e6/e1/28e6e16b4eee580edadfc42452bc9d74.gif" width ="350"></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://i.pinimg.com/originals/28/e6/e1/28e6e16b4eee580edadfc42452bc9d74.gif" width ="300"></a>
 </p>
 
 
@@ -102,6 +102,7 @@
 <br>
 
 ## <b> Let's Connect..!</b><img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80">
+[![Github badge](https://img.shields.io/badge/euphael-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/euphael) [![Gmail badge](https://img.shields.io/badge/raphadrum2@gmail.com-c5221f?style=for-the-badge&logo=gmail&logoColor=white)](mailto:raphadrum2@gmail.com)
 <br>
 <div align='left'>
 	
@@ -116,7 +117,7 @@
 
 <div align='center'>
 
-## <b>Thanks !...✨</b>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Ubuntu&color=%230EAA20&vCenter=true&lines=Thanks+for+visiting!+You're+welcome!)](https://git.io/typing-svg)
 
 </div>
 <br>
