@@ -17,9 +17,9 @@
 
 <br>
 
-- Amante da computação, estudante da programação back-end e front-end.
-- 3º Período Eng. Software
-- Conclusão do ensino técnico Cotemig
+- Computer lover, student of back-end and front-end programming.
+- 3rd Period Eng. Programs
+- Completion of Cotemig technical education
 <!-- - Personal website [link](https://www.0xabdulkhalid.ml)
 - I’m currently open for an Intern or a new job opportunity, this is [my resume](https://read.cv/0xabdulkhalid) -->
 
