@@ -4,12 +4,7 @@
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://i.pinimg.com/originals/28/e6/e1/28e6e16b4eee580edadfc42452bc9d74.gif" width ="300"></a>
 </p>
-
-
 <br>
-
-
-
 	
 ## <picture><img src = "https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width = 50px></picture> **About me**
 
@@ -17,13 +12,30 @@
 
 <br>
 
-- Computer lover, student of back-end and front-end programming.
-- 3rd Period Eng. Programs
-- Completion of Cotemig technical education
-<!-- - Personal website [link](https://www.0xabdulkhalid.ml)
-- I’m currently open for an Intern or a new job opportunity, this is [my resume](https://read.cv/0xabdulkhalid) -->
+	class WhoAmI extends Developer<Backend>{
 
-<br><br>
+    name: string = "Raphael Marques";
+    age: number = 21;
+    hobbies: Array<string> = [
+        "Watching movies",
+        "Games",
+        "Learning",
+        "Listening music",
+          "Go to events"
+    ];
+    
+    connectWithMe(): Object {
+        return {
+            Portfolio: "In progress..",
+            Linkedin: "RaphaelMarquesB",
+            Email: "jajajaalee137@gmail.com"		
+        }
+    }
+
+    // Additional information
+    moreAbout: string = "Computer lover, student of back-end and front-end programming.";
+    education: string = "3rd Period Eng. Programs, Completion of Cotemig technical education";
+<br>
 
 
 
