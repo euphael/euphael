@@ -35,6 +35,7 @@
     // Additional information
     moreAbout: string = "Computer lover, student of back-end and front-end programming.";
     education: string = "3rd Period Eng. Programs, Completion of Cotemig technical education";
+    nationality: string = "Brazilian";
 <br>
 
 
