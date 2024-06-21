@@ -23,7 +23,7 @@
         return {
             Portfolio: "In progress..",
             Linkedin: "RaphaelMarquesB",
-            Email: "jajajaalee137@gmail.com"		
+            Email: "raphadrum2@gmail.com"		
         }
     }
 
