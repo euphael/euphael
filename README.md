@@ -15,11 +15,11 @@ class WhoAmI extends Developer<Backend>{
 	 hobbies: Array<string> = [
         "Watching movies",
         "Games",
-        "Listening music",
-	"Go to events"
+        "Listening music", 
+        "Go to events"
     	];
 	
-	  connectWithMe(): Object {
+connectWithMe(): Object {
         return {
             Linkedin: "RaphaelMarquesB",
             Email: "raphadrum2@gmail.com"		
