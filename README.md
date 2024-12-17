@@ -21,8 +21,9 @@ class WhoAmI extends Developer<Backend>{
 	
 connectWithMe(): Object {
         return {
-            Linkedin: "RaphaelMarquesB",
-            Email: "raphadrum2@gmail.com"		
+            portifolio: "https://euphael.github.io/portfolio/"
+            linkedin: "RaphaelMarquesB",
+            email: "raphadrum2@gmail.com"		
         }
     }
 
