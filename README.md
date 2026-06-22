@@ -11,7 +11,7 @@
 class WhoAmI extends Developer<Backend>{
 
 	name: String = "Raphael Marques";
-	age: int = 21;
+	age: int = 23;
 	 hobbies: Array<string> = [
         "Watching movies",
         "Games",
