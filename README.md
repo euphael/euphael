@@ -22,14 +22,14 @@ class WhoAmI extends Developer<Backend>{
 connectWithMe(): Object {
         return {
             portifolio: "https://euphael.github.io/portfolio/",
-            linkedin: "RaphaelMarquesB",
+            linkedin: "https://www.linkedin.com/in/raphael-m-coding/",
             email: "raphadrum2@gmail.com"		
         }
     }
 
     // Additional information
     moreAbout: string = "Computer lover, student of back-end and front-end programming.";
-    education: string = "3rd Period Eng. Programs, Completion of Cotemig technical education";
+    education: string = "6rd Period Eng. Programs, Completion of Cotemig technical education";
     nationality: string = "Brazilian";
 
 }
@@ -47,6 +47,7 @@ connectWithMe(): Object {
     ![JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
     ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
     ![C](https://img.shields.io/badge/C%20-%232370ED.svg?style=for-the-badge&logo=c&logoColor=white)
+	![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
    
 <br>   
     
