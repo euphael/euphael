@@ -6,36 +6,8 @@
   <img src="https://raw.githubusercontent.com/euphael/euphael/main/github-metrics.svg">
 </p>
 	
-## **About me:**
 <br>
 
-```typescript
-class WhoAmI extends Developer<Backend>{
-
-	name: String = "Raphael Marques";
-	age: int = 23;
-	 hobbies: Array<string> = [
-        "Watching movies",
-        "Games",
-        "Listening music", 
-        "Go to events"
-    	];
-	
-connectWithMe(): Object {
-        return {
-            portifolio: "https://euphael.github.io/portfolio/",
-            linkedin: "https://www.linkedin.com/in/raphael-m-coding/",
-            email: "raphadrum2@gmail.com"		
-        }
-    }
-
-    // Additional information
-    moreAbout: string = "Computer lover, student of back-end and front-end programming.";
-    education: string = "6rd Period Eng. Programs, Completion of Cotemig technical education";
-    nationality: string = "Brazilian";
-
-}
-```
 
 -----
 <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Skills</b>
