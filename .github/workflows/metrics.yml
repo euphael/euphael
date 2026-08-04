@@ -69,13 +69,6 @@ jobs:
           plugin_isocalendar_duration: half-year
 
           # ======================
-          # HÁBITOS DE CODING
-          # ======================
-          plugin_habits: yes
-          plugin_habits_days: 30
-          plugin_habits_from: 200
-
-          # ======================
           # ESTRELAS
           # ======================
           plugin_stars: yes
@@ -87,13 +80,4 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_threshold: C
 
-          # ======================
-          # TÓPICOS
-          # ======================
-          plugin_topics: yes
-          plugin_topics_limit: 10
 
-          # ======================
-          # REPOSITÓRIOS
-          # ======================
-          plugin_repositories: yes
