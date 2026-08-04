@@ -24,7 +24,7 @@ jobs:
           # ======================
           # CONFIGURAÇÃO VISUAL
           # ======================
-          template: classic
+          template: terminal
           config_display: large
           config_padding: 16
           config_timezone: America/Sao_Paulo
