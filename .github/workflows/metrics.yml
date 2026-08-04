@@ -17,6 +17,21 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: euphael
+
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
+
+          plugin_languages: yes
+          plugin_languages_limit: 8
+
+          plugin_isocalendar: yes
+
+          plugin_habits: yes
+          plugin_habits_days: 30
+
+          plugin_stars: yes
+
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+
           config_timezone: America/Sao_Paulo
