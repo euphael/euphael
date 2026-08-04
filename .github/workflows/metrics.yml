@@ -18,20 +18,47 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: euphael
 
+          # Tema
           template: classic
-          base: header, activity, community, repositories
+          config_display: large
+          config_timezone: America/Sao_Paulo
 
+          # Aparência
+          config_padding: 0, 16
+          config_twemoji: yes
+
+          # Informações principais
+          base: header, activity, community, repositories, metadata
+
+          # Linguagens
           plugin_languages: yes
+          plugin_languages_sections: most-used
           plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
 
+          # Calendário de commits
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
 
+          # Hábitos
           plugin_habits: yes
           plugin_habits_days: 30
+          plugin_habits_from: 200
 
+          # Estrelas
           plugin_stars: yes
 
+          # Achievements
           plugin_achievements: yes
           plugin_achievements_threshold: C
 
-          config_timezone: America/Sao_Paulo
+          # Tópicos dos projetos
+          plugin_topics: yes
+          plugin_topics_limit: 10
+
+          # Repositórios
+          plugin_repositories: yes
+
+          # Visual
+          config_octicon: yes
+
