@@ -1,51 +1,99 @@
-name: GitHub Metrics Advanced
+name: Metrics
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: euphael
-          filename: assets/metrics-advanced.svg
 
-          # Configurações gerais
-          base: header, activity, community, repositories, metadata
+          # Arquivo gerado
+          filename: github-metrics.svg
+
+          # ======================
+          # CONFIGURAÇÃO VISUAL
+          # ======================
+          template: classic
+          config_display: large
+          config_padding: 16
           config_timezone: America/Sao_Paulo
-          config_theme: dark
+          config_twemoji: yes
+          config_octicon: yes
 
-          # Plugin de linguagens
+          # CSS personalizado (roxo)
+          extras_css: |
+            .header {
+              color: #c084fc !important;
+            }
+
+            .text {
+              fill: #e9d5ff !important;
+            }
+
+            svg {
+              border-radius: 20px;
+            }
+
+          # ======================
+          # INFORMAÇÕES PRINCIPAIS
+          # ======================
+          base: header, activity, community, repositories, metadata
+
+          # ======================
+          # LINGUAGENS
+          # ======================
           plugin_languages: yes
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
-          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_analysis_timeout: 15
 
-          # Plugin de linhas de código
-          plugin_lines: yes
+          # Evita erro do analyzer recente
+          plugin_languages_recent_load: 0
 
-          # Calendário isométrico
+          # ======================
+          # CALENDÁRIO DE COMMITS
+          # ======================
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # Hábitos
+          # ======================
+          # HÁBITOS DE CODING
+          # ======================
           plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
+          plugin_habits_days: 30
+          plugin_habits_from: 200
 
-          # Contribuições notáveis
-          plugin_notable: yes
-          plugin_notable_filter: stars:>100
+          # ======================
+          # ESTRELAS
+          # ======================
+          plugin_stars: yes
+          plugin_stars_limit: 4
 
-          # Stargazers
-          plugin_stargazers: yes
-          plugin_stargazers_charts: yes
+          # ======================
+          # ACHIEVEMENTS
+          # ======================
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+
+          # ======================
+          # TÓPICOS
+          # ======================
+          plugin_topics: yes
+          plugin_topics_limit: 10
+
+          # ======================
+          # REPOSITÓRIOS
+          # ======================
+          plugin_repositories: yes
