@@ -1,90 +1,51 @@
-name: Metrics
+name: GitHub Metrics Advanced
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
     steps:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: euphael
+          filename: assets/metrics-advanced.svg
 
-          # ======================
-          # 🎨 ESTILO
-          # ======================
-          template: repository
-          config_display: large
-          config_theme: tokyonight
-          config_padding: 16
-          config_timezone: America/Sao_Paulo
-          config_twemoji: yes
-
-          # ======================
-          # 📌 INFORMAÇÕES BASE
-          # ======================
+          # Configurações gerais
           base: header, activity, community, repositories, metadata
+          config_timezone: America/Sao_Paulo
+          config_theme: dark
 
-          # ======================
-          # 💻 LINGUAGENS
-          # ======================
+          # Plugin de linguagens
           plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_analysis_timeout: 15
+          plugin_languages_limit: 8
+          plugin_languages_indepth: yes
 
-          # ======================
-          # 📅 CALENDÁRIO
-          # ======================
+          # Plugin de linhas de código
+          plugin_lines: yes
+
+          # Calendário isométrico
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # ======================
-          # 🔥 HÁBITOS DE CODING
-          # ======================
+          # Hábitos
           plugin_habits: yes
-          plugin_habits_days: 30
-          plugin_habits_from: 200
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
 
-          # ======================
-          # ⭐ ESTRELAS
-          # ======================
-          plugin_stars: yes
+          # Contribuições notáveis
+          plugin_notable: yes
+          plugin_notable_filter: stars:>100
 
-          # ======================
-          # 🏆 CONQUISTAS
-          # ======================
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-
-          # ======================
-          # 📚 TÓPICOS
-          # ======================
-          plugin_topics: yes
-          plugin_topics_limit: 10
-
-          # ======================
-          # 🚀 PROJETOS
-          # ======================
-          plugin_repositories: yes
-
-          # ======================
-          # ⚡ ATIVIDADE RECENTE
-          # ======================
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-
-          # ======================
-          # 🎯 ÍCONES
-          # ======================
-          config_octicon: yes
+          # Stargazers
+          plugin_stargazers: yes
+          plugin_stargazers_charts: yes
