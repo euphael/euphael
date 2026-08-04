@@ -20,6 +20,7 @@ jobs:
 
           # Tema
           template: classic
+          theme: tokyonight
           config_display: large
           config_timezone: America/Sao_Paulo
 
@@ -58,6 +59,7 @@ jobs:
 
           # Repositórios
           plugin_repositories: yes
+          
 
           # Visual
           config_octicon: yes
