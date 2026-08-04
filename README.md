@@ -2,7 +2,9 @@
 <h1 align="center"><b>Hi , I'm Raphael Marques </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
 <br>
-<p align="center"><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=euphael&theme=algolia" alt="raphaelMarques" /></a></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/euphael/euphael/main/github-metrics.svg">
+</p>
 	
 ## **About me:**
 <br>
